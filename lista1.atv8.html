@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function resultado(){
+        var salario = parseFloat(prompt("Digite o seu salário: "))
+
+        var percentual
+        var aumento
+        var novosalario
+
+        if (salario <= 280){
+            percentual = 20
+        }
+
+        else if (salario > 280 && salario < 700){
+        percentual = 15
+        }
+
+        else if ( salario > 700 && salario < 1500){
+        percentual = 10
+        }
+
+        else{
+            percentual = 5
+        }
+
+        aumento = salario * (percentual / 100)
+        novosalario = salario + aumento
+
+        document.write('O percentual de aumento aplicado foi: ', percentual, '%', '<br>')
+        document.write('O valor do aumento R$: ', aumento, '<br>')
+        document.write('Salário atualizado R$: ', novosalario)
+    }
+</script>
+<body>
+    <input type="button" onclick="resultado()" value="exibir alert">
+</body>
+</html>

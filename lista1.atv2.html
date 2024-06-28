@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+       function resultado() {
+
+var nota1 = parseFloat(prompt("Digite a primeira nota:"))
+var nota2 = parseFloat(prompt("Digite a segunda nota:"))
+var nota3 = parseFloat(prompt("Digite a terceira nota:"))
+
+var media = (nota1 + nota2 + nota3) / 3;
+
+document.write('A primeira nota foi: ', +nota1, '<br>')
+document.write('A segunda nota foi:  ', +nota2, '<br>')
+document.write('A terceira nota foi: ', +nota3, '<br>') 
+document.write('A média das notas é: ' +media)
+       }
+</script>
+<body>
+    <input type="button" onclick="resultado()" value="exibir alert">
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function resultado(){
+        var temperatura = parseFloat(prompt("Digite a temperatura em Fharenheit: "))
+
+        var temperaturaC = (temperatura - 32) * 5 / 9
+
+        document.write('A temperatura em graus celcius é de: ', temperaturaC)
+    }
+</script>
+<body>
+    <input type="button" onclick="resultado()" value="exibir alert">
+</body>
+</html>

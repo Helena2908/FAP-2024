@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function resultado(){
+        var nomefilho = prompt("Digite seu nome: ")
+        var idadefilho = parseInt(prompt("Digite sua idade: "))
+        var nomemae = prompt('Digite o nome da sua mãe: ')
+        var idademae = parseInt(prompt("Digite a idade da sua mãe: "))
+        var nomepai = prompt('Digite o nome do seu pai: ')
+        var idadepai = parseInt(prompt("Digite a idade do seu pai: "))
+
+        var calculomae = idademae - idadefilho
+        var calculopai = idadepai - idadefilho
+
+        document.write(nomefilho, " quando você nasceu, ", nomemae, " tinha ", calculomae, ' anos e ', nomepai, ' tinha ', calculopai)
+
+
+    }
+</script>
+<body>
+    <input type="button" onclick="resultado()" value="exibir alert">
+</body>
+</html>

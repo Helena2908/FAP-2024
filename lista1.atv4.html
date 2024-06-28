@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function resultado(){
+        var salario = parseFloat(prompt('Digite o seu salário: '))
+        var aumento = parseFloat(prompt('Digite o percentual de aumento: '))
+
+        var reajuste = salario * (aumento / 100)
+        var soma = salario + reajuste
+        document.write("Seu salário atual é de: " + soma)
+        
+    }
+</script>
+<body>
+    <input type="button" onclick="resultado()" value="exibir alert">
+</body>
+</html>

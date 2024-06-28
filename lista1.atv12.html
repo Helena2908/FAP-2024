@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function resultado() {
+        var n1 = parseInt(prompt('Digite o primeiro número: '))
+        var n2 = parseInt(prompt('Digite o segundo número: '))
+        var n3 = parseInt(prompt('Digite o terceiro número: '))
+
+        var maior
+        var menor
+
+        if (n1 >= n2 && n1 >= n3) {
+            maior = n1;
+        }
+
+        else if (n2 >= n1 && n2 >= n3) {
+            maior = n2;
+        }
+
+        else {
+            maior = n3;
+        }
+
+        if (n1 <= n2 && n1 <= n3) {
+            menor = n1;
+        }
+        
+        else if (n2 <= n1 && n2 <= n3) {
+            menor = n2;
+        } 
+        
+        else {
+            menor = n3;
+        }
+
+        document.write('O maior número é: ', maior, '<br>')
+        document.write('O menor número é: ', menor)
+    }
+</script>
+
+<body>
+    <input type="button" onclick="resultado()" value="exibir alert">
+</body>
+
+</html>

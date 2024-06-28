@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function resultado() {
+        var kmi = parseFloat(prompt('Digite a quilometragem inicial: '))
+        var kmf = parseFloat(prompt('Digite a quilometragem finial: '))
+        var litros = parseFloat(prompt('Digite quantos litros foram consumidos na viagem: '))
+        var valorl = parseFloat(prompt('Qual o valor do litro: '))
+
+        var distancia = kmf - kmi
+        var gastol = litros * valorl
+        var consumo = distancia / litros
+        document.write('A distância percorrida foi de: ' + distancia, ' o valor total gasto foi de: ' + gastol, ' e o consumo do carro foi de: ' + consumo)
+
+
+
+    }
+</script>
+<body>
+     <input type="button" onclick="resultado()" value="exibir alert">
+</body>
+</html>
